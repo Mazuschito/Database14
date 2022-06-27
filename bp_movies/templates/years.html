@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ qty }} movies from {{ year_from}} till {{ year_to }}</h1>
+{% for movie in movies %}
+<p>Movie title: {{ movie.title }}</p>
+<p>Release year: {{ movie.release_year }}</p>
+<hr>
+{% endfor %}
+</body>
+</html>

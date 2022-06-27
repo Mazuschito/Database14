@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>{{ qty }} movies with genre: {{ genre }}</h1>
+{% for movie in movies %}
+<p>Movie title: {{ movie.title }}</p>
+<p>Description: {{ movie.description }}</p>
+<hr>
+{% endfor %}
+</body>
+</html>
